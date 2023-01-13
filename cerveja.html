@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço Cerveja por 100ml</title>
+    <link rel="stylesheet" href="cerveja.css">
+</head>
+<!-- PROGRAMA CALCULAR O VALOR DA CERVEJA POR 100ML VERSÃO 1.0-->
+<body>
+    <h1 class="titulo">Preço da Cerveja por 100ml V-1.0</h1>
+
+
+</body>
+
+</html>
+<script>
+    var qntCerveja = parseInt(prompt("Quantos preços de cervejas você deseja comparar? "));
+
+    function calcularPreco(volume, preco) {
+        var valor = (preco * 100) / volume;
+        return valor;
+    }
+
+    for (i = 0; i < qntCerveja; i++) {
+        var nome = prompt("Digite o nome da " + (i+1) + "ª cerveja: ");
+        var vol = parseInt(prompt("Digite o volume da " + (i+1) + "ª cerveja/ml:"));
+        var precoC = parseFloat(prompt("Digite o valor da " + (i+1) + "ª cerveja: (RS)"));
+
+        var valorCerveja = calcularPreco(vol, precoC);
+        document.write("O valor por da " +
+            nome + " de " +
+            vol + " é: " + valorCerveja +"<br>");
+    }
+</script>
