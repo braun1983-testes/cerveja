@@ -8,9 +8,9 @@
     <title>Preço Cerveja por 100ml</title>
     <link rel="stylesheet" href="cerveja.css">
 </head>
-<!-- PROGRAMA CALCULAR O VALOR DA CERVEJA POR 100ML VERSÃO 1.0-->
+
 <body>
-    <h1 class="titulo">Preço da Cerveja por 100ml V-1.0</h1>
+    <h1 class="titulo">Preço da Cerveja por 100ml V-1.3</h1>
 
 
 </body>
@@ -32,6 +32,6 @@
         var valorCerveja = calcularPreco(vol, precoC);
         document.write("O valor por da " +
             nome + " de " +
-            vol + " é: R$" + valorCerveja +" por 100ml <br>");
+            vol + "ml é: R$" + valorCerveja.toFixed(2) +" por 100ml<br>");
     }
 </script>
